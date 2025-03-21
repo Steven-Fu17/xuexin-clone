@@ -4,38 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>学信档案</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        .container {
-            position: relative;
-            display: inline-block;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-        .click-area {
-            position: absolute;
-            top: 40%; /* 调整点击区域位置 */
-            left: 50%;
-            width: 50%;
-            height: 15%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h2>学信档案</h2>
-    <div class="container">
-        <img src="page1.png" alt="学信网界面">
-        <a href="page2.html">
-            <div class="click-area"></div>
-        </a>
+
+    <!-- 顶部导航栏 -->
+    <div class="header">
+        <span class="close">✖</span>
+        <h2>学信档案</h2>
+        <p class="subdomain">my.chsi.com.cn</p>
     </div>
+
+    <!-- 首页完整截图 -->
+    <div class="container">
+        <img src="page1.png" alt="学信档案首页" class="full-width">
+
+        <!-- 透明按钮，点击跳转到 page2.html -->
+        <a href="page2.html" class="transparent-button"></a>
+    </div>
+
 </body>
 </html>
